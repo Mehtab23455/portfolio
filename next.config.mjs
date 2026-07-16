@@ -11,10 +11,8 @@ const nextConfig = {
     remotePatterns: [{ protocol: "https", hostname: "**" }],
   },
 
-  // 3. IMPORTANT: If your repository is a project repo and NOT a user page, 
-  // (e.g., https://username.github.io/portfolio-repo), 
-  // uncomment the line below and replace 'portfolio-repo' with your exact repo name:
-  // basePath: '/portfolio-repo',
+  // 3. IMPORTANT: Prepend the repository name for correct asset routing on GitHub Pages
+  basePath: '/portfolio',
 };
 
 export default nextConfig;
