@@ -1,4 +1,4 @@
-# Mehtab Singh Sidhu — Graduate Portfolio
+# Mehtab Singh Sidhu : Graduate Portfolio
 
 A production-ready Next.js 15 portfolio for AI / Data Analytics / Decision
 Intelligence graduate school applications, built with TypeScript, Tailwind
