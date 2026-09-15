@@ -359,10 +359,10 @@ export const experience: ExperienceEntry[] = [
   },
   {
     id: "solar-beauty-ai",
-    org: "Solar Beauty AI",
+    org: "Soulracle Limited | RenyoAI",
     role: "Data Analytics Intern",
     period: "June 2026 -- Aug 2026",
-    location: "Hong Kong SAR",
+    location: "",
     responsibilities: [
       "Built dashboards and reporting for product and marketing teams",
       "Performed exploratory analysis to inform product decisions",
