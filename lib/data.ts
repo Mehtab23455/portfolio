@@ -18,7 +18,7 @@ export const profile = {
     "Applied AI and Data Engineering undergraduate passionate about building intelligent systems that combine machine learning, business analytics, and scalable data infrastructure. My work spans AI products, financial machine learning research, enterprise analytics, and decision intelligence.",
   location: "Punjab, India",
   email: "mehtabsinghsidhu01@gmail.com",
-  resumeUrl: "/public/assets/CV.pdf",
+  resumeUrl: "/assets/RESUME.pdf",
   social: {
     github: "https://github.com/Mehtab23455",
     linkedin: "https://linkedin.com/in/mehtab-singh-sidhu",
