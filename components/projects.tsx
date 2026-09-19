@@ -12,7 +12,8 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 function ProjectCard({ project, index }: { project: Project; index: number }) {
-  const [open, setOpen] = useState(index === 0);
+  // Set all to false by default for a compact, scannable layout
+  const [open, setOpen] = useState(false);
 
   return (
     <Card className="overflow-hidden">
@@ -46,12 +47,11 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
         </div>
 
         {/* Right Side: Information Data Block */}
-        <div className="p-7 md:p-8">
+        <div className="p-7 md:p-8 flex flex-col">
           <h3 className="text-xl font-semibold text-foreground">{project.name}</h3>
           <p className="mt-1.5 text-sm text-accent-soft">{project.tagline}</p>
 
-          <p className="mt-4 text-sm leading-relaxed text-muted">{project.problem}</p>
-
+          {/* Key Metrics */}
           <div className="mt-5 grid grid-cols-3 gap-3">
             {project.metrics.map((m) => (
               <div key={m.label} className="rounded-lg border border-border bg-white/[0.02] p-3">
@@ -63,6 +63,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
             ))}
           </div>
 
+          {/* Tech Stack */}
           <div className="mt-5 flex flex-wrap gap-2">
             {project.stack.map((s) => (
               <Badge key={s} variant="outline">
@@ -71,34 +72,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
             ))}
           </div>
 
-          <button
-            onClick={() => setOpen((v) => !v)}
-            aria-expanded={open}
-            className="mt-6 flex w-full items-center justify-between border-t border-border pt-5 text-left text-sm text-muted hover:text-foreground transition-colors"
-          >
-            <span className="font-mono text-xs uppercase tracking-[0.15em]">
-              Architecture & features
-            </span>
-            <ChevronDown
-              size={16}
-              className={cn("transition-transform duration-300", open && "rotate-180")}
-            />
-          </button>
-
-          {open && (
-            <div className="mt-4 space-y-4">
-              <p className="text-sm leading-relaxed text-muted">{project.architecture}</p>
-              <ul className="space-y-1.5">
-                {project.features.map((f) => (
-                  <li key={f} className="flex items-start gap-2 text-sm text-muted">
-                    <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent-soft" />
-                    {f}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
-
+          {/* Action Buttons (Moved up so they are always visible) */}
           <div className="mt-6 flex flex-wrap gap-2.5">
             {project.demoUrl && (
               <Button size="sm" asChild>
@@ -122,6 +96,54 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
               </Button>
             )}
           </div>
+
+          {/* Expandable Details Toggle */}
+          <button
+            onClick={() => setOpen((v) => !v)}
+            aria-expanded={open}
+            className="mt-6 flex w-full items-center justify-between border-t border-border pt-5 text-left text-sm text-muted hover:text-foreground transition-colors"
+          >
+            <span className="font-mono text-xs uppercase tracking-[0.15em]">
+              {open ? "Hide project details" : "Read full description"}
+            </span>
+            <ChevronDown
+              size={16}
+              className={cn("transition-transform duration-300", open && "rotate-180")}
+            />
+          </button>
+
+          {/* Expanded Content */}
+          {open && (
+            <div className="mt-5 space-y-6 animate-in fade-in slide-in-from-top-2 duration-300">
+              <div>
+                <h4 className="mb-2 font-mono text-xs uppercase tracking-[0.15em] text-muted-foreground">
+                  The Problem
+                </h4>
+                <p className="text-sm leading-relaxed text-muted">{project.problem}</p>
+              </div>
+
+              <div>
+                <h4 className="mb-2 font-mono text-xs uppercase tracking-[0.15em] text-muted-foreground">
+                  Architecture
+                </h4>
+                <p className="text-sm leading-relaxed text-muted">{project.architecture}</p>
+              </div>
+
+              <div>
+                <h4 className="mb-2 font-mono text-xs uppercase tracking-[0.15em] text-muted-foreground">
+                  Key Features
+                </h4>
+                <ul className="space-y-1.5">
+                  {project.features.map((f) => (
+                    <li key={f} className="flex items-start gap-2 text-sm text-muted">
+                      <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent-soft" />
+                      {f}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </Card>
