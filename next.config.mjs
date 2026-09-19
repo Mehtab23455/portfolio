@@ -6,9 +6,8 @@ const nextConfig = {
     unoptimized: true,
     remotePatterns: [{ protocol: "https", hostname: "**" }],
   },
-  // Comment this out while developing locally. 
-  // Uncomment it right before you push to GitHub Pages!
-  // basePath: '/portfolio',
+  // Automatically applies the basePath only when building for production/GitHub Pages
+  basePath: process.env.NODE_ENV === 'production' ? '/portfolio' : '',
 };
 
 export default nextConfig;
