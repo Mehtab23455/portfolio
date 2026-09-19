@@ -49,12 +49,12 @@ export function Nav() {
         </ul>
 
         <div className="hidden md:block">
-          <Button asChild size="sm" variant="outline">
-            <a href={profile.resumeUrl} download>
-              Download Resume
-            </a>
+           <Button asChild size="sm" variant="outline">
+             <a href={profile.resumeUrl} download="RESUME.pdf">
+               Download Resume
+             </a>
           </Button>
-        </div>
+       </div>
 
         <button
           aria-label={open ? "Close menu" : "Open menu"}
