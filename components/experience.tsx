@@ -1,4 +1,4 @@
-import { Building2 } from "lucide-react";
+import Image from "next/image";
 import { experience } from "@/lib/data";
 import { SectionHeading } from "@/components/section-heading";
 import { Reveal } from "@/components/reveal";
@@ -16,8 +16,14 @@ export function Experience() {
             <Card className="p-7 md:p-8">
               <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
                 <div className="flex gap-4">
-                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-border-strong bg-white/[0.03] text-accent-soft">
-                    <Building2 size={18} />
+                  {/* Updated Logo Container */}
+                  <div className="relative flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-border-strong bg-white/[0.03] overflow-hidden">
+                    <Image
+                      src={entry.icon}
+                      alt={`${entry.org} logo`}
+                      fill
+                      className="object-contain p-0"
+                    />
                   </div>
                   <div>
                     <h3 className="text-base font-semibold text-foreground">{entry.org}</h3>
@@ -26,7 +32,7 @@ export function Experience() {
                 </div>
                 <div className="font-mono text-xs text-muted-foreground md:text-right">
                   <p>{entry.period}</p>
-                  <p className="mt-0.5">{entry.location}</p>
+                  <p className="mt-">{entry.location}</p>
                 </div>
               </div>
 

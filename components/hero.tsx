@@ -131,6 +131,9 @@ export function Hero() {
             <Button size="lg" variant="outline" asChild>
               <a href="#projects">Projects</a>
             </Button>
+            <Button size="lg" variant="outline" asChild>
+              <a href="#experience">Work Experience</a>
+            </Button>
           </div>
 
           <div className="mt-12 flex items-center gap-5">

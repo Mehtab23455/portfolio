@@ -276,14 +276,14 @@ export const projects: Project[] = [
     ],
     githubUrl: "https://github.com/Mehtab23455/sql-analysis-international-debt",
     caseStudyUrl: "#",
-    imageUrl: "/assets/Screenshot 2026-07-16 085538.png",
+    imageUrl: "/assets/Screenshot 2026-09-19 170722.png",
   },
   {
     id: "business-performance-dashboard",
-    name: "Business Performance Dashboard",
+    name: "Data Professional Survey BreakdownDashboard",
     tagline: "Enterprise analytics dashboard for cross-functional KPIs",
     problem:
-      "Leadership teams needed a single, trustworthy view of performance across sales, ops, and finance instead of siloed spreadsheets.",
+      "Leadership teams needed a single, trustworthy view of employeee details instead of siloed spreadsheets.",
     architecture:
       "ETL pipeline consolidates source systems -> warehouse layer -> semantic metrics layer -> interactive dashboard with drill-down.",
     features: [
@@ -299,7 +299,7 @@ export const projects: Project[] = [
       { label: "Adoption across teams", value: "4 departments" },
     ],
     githubUrl: "https://github.com/Mehtab23455/business-performance-analysis",
-    imageUrl: "/assets/Screenshot 2026-07-16 085538.png",
+    imageUrl: "/assets/Screenshot 2026-09-14 143849.png",
   },
   {
     id: "matchhub",
@@ -322,7 +322,7 @@ export const projects: Project[] = [
       { label: "Profiles indexed", value: "25K+" },
     ],
     githubUrl: "https://github.com/GautamGirdhar/MatchHub-Backend",
-    imageUrl: "/assets/Screenshot 2026-07-16 085538.png",
+    imageUrl: "/assets/Screenshot 2026-09-19 170210.png",
   },
 ];
 
@@ -335,6 +335,7 @@ export type ExperienceEntry = {
   responsibilities: string[];
   impact: string[];
   technologies: string[];
+  icon: string;
 };
 
 // --- Update the experience array configuration inside lib/data.ts ---
@@ -346,6 +347,7 @@ export const experience: ExperienceEntry[] = [
     role: "Data & Analytics Engineer",
     period: "June 2026 -- Present",
     location: "Texas, United States (Remote)",
+    icon: "/assets/exp/lunartech.png",
     responsibilities: [
       "Prototyped and evaluated ML models for applied research projects",
       "Ran experiments and maintained reproducible evaluation pipelines",
@@ -360,9 +362,10 @@ export const experience: ExperienceEntry[] = [
   {
     id: "solar-beauty-ai",
     org: "Soulracle Limited | RenyoAI",
-    role: "Data Analytics Intern",
+    role: "Data Analytst Intern",
     period: "June 2026 -- Aug 2026",
     location: "",
+    icon: "/assets/exp/soulracle.png",
     responsibilities: [
       "Built dashboards and reporting for product and marketing teams",
       "Performed exploratory analysis to inform product decisions",
@@ -380,6 +383,7 @@ export const experience: ExperienceEntry[] = [
     role: "Software & Data Engineer",
     period: "June 2025 -- Aug 2025",
     location: "Ludhiana, India",
+    icon: "/assets/exp/byteoski.png",
     responsibilities: [
       "Designed and shipped ML-backed features for client-facing products",
       "Built and maintained data pipelines feeding downstream analytics",
@@ -429,6 +433,14 @@ export const skills = {
 };
 
 export const leadership = [
+    {
+    id: "mindhk",
+    org: "MIND-HK",
+    role: "Volunteer",
+    period: "",
+    description:
+      "Volunteered Data Cleaning tasks for MindHK organisation in hong kong under the guidance of Ms. Adi Lai",
+  },
   {
     id: "techverse",
     org: "TechVerse",
@@ -437,6 +449,7 @@ export const leadership = [
     description:
       "Co-organize a student-led technology community running workshops, hackathons, and speaker sessions on applied AI and software engineering for 300+ members.",
   },
+
   {
     id: "class-rep",
     org: "Department of Computer Science Engineering",
@@ -457,31 +470,32 @@ export const leadership = [
 
 export const certifications = [
   { 
+    id: "ba-data-science", 
+    name: "Data Science Career Certificate", 
+    issuer: "British Airways", 
+    year: "2026", 
+    url: "https://drive.google.com/file/d/1-QCSpLwdl67r5nZe34ywWzJZb9jKiIct/view?usp=sharing",
+    // Extracted ID: 1-QCSpLwdl67r5nZe34ywWzJZb9jKiIct
+    imageUrl: "/assets/certifications/ba-data-science.jpg"
+  },
+  { 
     id: "ibm-data-science", 
     name: "IBM Data Science Professional Certificate", 
     issuer: "IBM", 
     year: "2024", 
     url: "https://drive.google.com/file/d/1r_IbrCPL2XZhNZAOKSYV6LkKtCbicRQ9/view?usp=sharing",
     // Extracted ID: 1r_IbrCPL2XZhNZAOKSYV6LkKtCbicRQ9
-    imageUrl: "https://drive.google.com/uc?export=view&id=1r_IbrCPL2XZhNZAOKSYV6LkKtCbicRQ9&sz=w800"
+    imageUrl: "/assets/certifications/ibm-data-science.jpg"
   },
+  
   { 
-    id: "ba-data-science", 
-    name: "Data Science Career Certificate", 
-    issuer: "British Airways", 
-    year: "2024", 
-    url: "https://drive.google.com/file/d/1-QCSpLwdl67r5nZe34ywWzJZb9jKiIct/view?usp=sharing",
-    // Extracted ID: 1-QCSpLwdl67r5nZe34ywWzJZb9jKiIct
-    imageUrl: "https://drive.google.com/uc?export=view&id=1-QCSpLwdl67r5nZe34ywWzJZb9jKiIct&sz=w800" 
-  },
-  { 
-    id: "ibm-ml", 
+    id: "ibm-bd", 
     name: "Big Data 101", 
     issuer: "IBM", 
     year: "2023", 
     url: "https://drive.google.com/file/d/1pQIIJwvGnd3kHPfavDDdbHv_pIOPW3_k/view?usp=drive_link",
     // Extracted ID: 1pQIIJwvGnd3kHPfavDDdbHv_pIOPW3_k
-    imageUrl: "https://drive.google.com/uc?export=view&id=1pQIIJwvGnd3kHPfavDDdbHv_pIOPW3_k&sz=w800"
+    imageUrl: "/assets/certifications/ibm-big-data.jpg"
   },
   { 
     id: "ibm-rapid-dev-ai", 
@@ -489,7 +503,7 @@ export const certifications = [
     issuer: "IBM", 
     year: "2025", 
     url: "https://drive.google.com/file/d/1asAKAR74O64dWKacssOBs0IZRyDwrgXO/view?usp=drive_link",
-    imageUrl: "https://drive.google.com/uc?export=view&id=1asAKAR74O64dWKacssOBs0IZRyDwrgXO&sz=w800"
+    imageUrl: "/assets/certifications/ibm-rapid-dev-ai.jpg"
   },
   { 
     id: "ibm-bi", 
@@ -497,7 +511,7 @@ export const certifications = [
     issuer: "IBM", 
     year: "2025", 
     url: "https://drive.google.com/file/d/12hMivQ7Z0-5jf18mhn-THVDTXOJ0AlEW/view?usp=sharing",
-    imageUrl: "https://drive.google.com/uc?export=view&id=12hMivQ7Z0-5jf18mhn-THVDTXOJ0AlEW&sz=w800"
+    imageUrl: "/assets/certifications/ibm-bi.jpg"
   },
   { 
     id: "ibm-py", 
@@ -505,7 +519,15 @@ export const certifications = [
     issuer: "IBM", 
     year: "2023", 
     url: "https://drive.google.com/file/d/1hgtUe7sB9k5x6tDHvrVhkMJu7Vmvmil0/view?usp=sharing",
-    imageUrl: "https://drive.google.com/uc?export=view&id=1hgtUe7sB9k5x6tDHvrVhkMJu7Vmvmil0&sz=w800"
+    imageUrl: "/assets/certifications/ibm-py.jpg"
+  },
+  { 
+    id: "ibm-ml", 
+    name: "Machine Learning in Python", 
+    issuer: "IBM", 
+    year: "2024", 
+    url: "https://drive.google.com/file/d/1vnZN5HCoNTV0TxJj8B9mgbOBldcWboq6/view?usp=sharing",
+    imageUrl: "/assets/certifications/ibm-ml.jpg"
   },
 ];
 
@@ -547,6 +569,8 @@ export const navLinks = [
   { label: "Research", href: "#research" },
   { label: "Projects", href: "#projects" },
   { label: "Experience", href: "#experience" },
+  { label: "Certifications", href: "#certifications" },
   { label: "Leadership", href: "#leadership" },
-  { label: "Contact", href: "#contact" },
+  { label: "Contact", href: "#contact" }
+  
 ];
