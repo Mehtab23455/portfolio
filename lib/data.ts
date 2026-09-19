@@ -459,6 +459,9 @@ export const certifications = [
   { id: "ibm-data-science", name: "IBM Data Science Professional Certificate", issuer: "IBM", year: "2024", url: "#" },
   { id: "ba-data-science", name: "Data Science Career Certificate", issuer: "British Airways", year: "2024", url: "#" },
   { id: "ibm-ml", name: "Machine Learning with Python", issuer: "IBM", year: "2023", url: "#" },
+  { id: "ibm-rapid-dev-ai", name: "Rapid Development for AI (AI Services)", issuer: "IBM", year: "2025", url: "https://drive.google.com/file/d/1asAKAR74O64dWKacssOBs0IZRyDwrgXO/view?usp=drive_link" },
+  { id: "ibm-bi", name: "Business Intelligence", issuer: "IBM", year: "2025", url: "https://drive.google.com/file/d/12hMivQ7Z0-5jf18mhn-THVDTXOJ0AlEW/view?usp=sharing" },
+  { id: "ibm-py", name: "Python 101 For Data Science", issuer: "IBM", year: "2023", url: "https://drive.google.com/file/d/1hgtUe7sB9k5x6tDHvrVhkMJu7Vmvmil0/view?usp=sharing" },
 ];
 
 export const githubConfig = {
