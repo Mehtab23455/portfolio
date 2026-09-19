@@ -463,7 +463,7 @@ export const certifications = [
     year: "2024", 
     url: "https://drive.google.com/file/d/1r_IbrCPL2XZhNZAOKSYV6LkKtCbicRQ9/view?usp=sharing",
     // Extracted ID: 1r_IbrCPL2XZhNZAOKSYV6LkKtCbicRQ9
-    imageUrl: "https://drive.google.com/uc?export=view&id=1r_IbrCPL2XZhNZAOKSYV6LkKtCbicRQ9"
+    imageUrl: "https://drive.google.com/uc?export=view&id=1r_IbrCPL2XZhNZAOKSYV6LkKtCbicRQ9&sz=w800"
   },
   { 
     id: "ba-data-science", 
@@ -472,7 +472,7 @@ export const certifications = [
     year: "2024", 
     url: "https://drive.google.com/file/d/1-QCSpLwdl67r5nZe34ywWzJZb9jKiIct/view?usp=sharing",
     // Extracted ID: 1-QCSpLwdl67r5nZe34ywWzJZb9jKiIct
-    imageUrl: "https://drive.google.com/uc?export=view&id=1-QCSpLwdl67r5nZe34ywWzJZb9jKiIct" 
+    imageUrl: "https://drive.google.com/uc?export=view&id=1-QCSpLwdl67r5nZe34ywWzJZb9jKiIct&sz=w800" 
   },
   { 
     id: "ibm-ml", 
@@ -481,7 +481,7 @@ export const certifications = [
     year: "2023", 
     url: "https://drive.google.com/file/d/1pQIIJwvGnd3kHPfavDDdbHv_pIOPW3_k/view?usp=drive_link",
     // Extracted ID: 1pQIIJwvGnd3kHPfavDDdbHv_pIOPW3_k
-    imageUrl: "https://drive.google.com/uc?export=view&id=1pQIIJwvGnd3kHPfavDDdbHv_pIOPW3_k"
+    imageUrl: "https://drive.google.com/uc?export=view&id=1pQIIJwvGnd3kHPfavDDdbHv_pIOPW3_k&sz=w800"
   },
   { 
     id: "ibm-rapid-dev-ai", 
@@ -489,7 +489,7 @@ export const certifications = [
     issuer: "IBM", 
     year: "2025", 
     url: "https://drive.google.com/file/d/1asAKAR74O64dWKacssOBs0IZRyDwrgXO/view?usp=drive_link",
-    imageUrl: "https://drive.google.com/uc?export=view&id=1asAKAR74O64dWKacssOBs0IZRyDwrgXO"
+    imageUrl: "https://drive.google.com/uc?export=view&id=1asAKAR74O64dWKacssOBs0IZRyDwrgXO&sz=w800"
   },
   { 
     id: "ibm-bi", 
@@ -497,7 +497,7 @@ export const certifications = [
     issuer: "IBM", 
     year: "2025", 
     url: "https://drive.google.com/file/d/12hMivQ7Z0-5jf18mhn-THVDTXOJ0AlEW/view?usp=sharing",
-    imageUrl: "https://drive.google.com/uc?export=view&id=12hMivQ7Z0-5jf18mhn-THVDTXOJ0AlEW"
+    imageUrl: "https://drive.google.com/uc?export=view&id=12hMivQ7Z0-5jf18mhn-THVDTXOJ0AlEW&sz=w800"
   },
   { 
     id: "ibm-py", 
@@ -505,7 +505,7 @@ export const certifications = [
     issuer: "IBM", 
     year: "2023", 
     url: "https://drive.google.com/file/d/1hgtUe7sB9k5x6tDHvrVhkMJu7Vmvmil0/view?usp=sharing",
-    imageUrl: "https://drive.google.com/uc?export=view&id=1hgtUe7sB9k5x6tDHvrVhkMJu7Vmvmil0"
+    imageUrl: "https://drive.google.com/uc?export=view&id=1hgtUe7sB9k5x6tDHvrVhkMJu7Vmvmil0&sz=w800"
   },
 ];
 
