@@ -4,6 +4,7 @@
 // with real content -- components read from here, so the design never needs
 // to change.
 // ---------------------------------------------------------------------------
+const basePath = process.env.NODE_ENV === 'production' ? '/portfolio' : '';
 
 export const profile = {
   name: "Mehtab Singh Sidhu",
@@ -18,7 +19,7 @@ export const profile = {
     "Applied AI and Data Engineering undergraduate passionate about building intelligent systems that combine machine learning, business analytics, and scalable data infrastructure. My work spans AI products, financial machine learning research, enterprise analytics, and decision intelligence.",
   location: "Punjab, India",
   email: "mehtabsinghsidhu01@gmail.com",
-  resumeUrl: "/assets/RESUME.pdf",
+  resumeUrl: `${basePath}/assets/RESUME.pdf`,
   social: {
     github: "https://github.com/Mehtab23455",
     linkedin: "https://linkedin.com/in/mehtab-singh-sidhu",
@@ -126,7 +127,7 @@ export const publications: Publication[] = [
     citations: 0,
     downloads: 13,
     views: 34,
-    pdfUrl: "/zen-pdfs/Sidhu_Mehtab_Generalization_Limits.pdf", // Path to your public asset folder
+    pdfUrl: `${basePath}/zen-pdfs/Sidhu_Mehtab_Generalization_Limits.pdf`, // Path to your public asset folder
     bibtex:
       "@techreport{sidhu2026generalization,\n  title={Generalization Limits in Noisy Time Series Returns},\n  author={Sidhu, Mehtab Singh},\n  year={2026},\n  institution={Zenodo}\n}",
   },
@@ -144,7 +145,7 @@ export const publications: Publication[] = [
     citations: 0,
     downloads: 34,
     views: 85,
-    pdfUrl: "/zen-pdfs/Sidhu_Mehtab_Volatility_Dynamics_Asian_Markets.pdf", // Matches your screenshot asset
+    pdfUrl: `${basePath}/zen-pdfs/Sidhu_Mehtab_Volatility_Dynamics_Asian_Markets.pdf`, // Matches your screenshot asset
     bibtex:
       "@article{sidhu2026volatility,\n  title={Volatility Dynamics of Asian Stock Markets: Evidence from the Hang Seng Index and Nikkei 225},\n  author={Sidhu, Mehtab Singh},\n  year={2026},\n  note={Working paper}\n}",
   },
@@ -201,7 +202,7 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/Mehtab23455/EcomSWOT-backend",
     caseStudyUrl: "#",
     featured: true,
-    imageUrl: "/assets/Screenshot 2026-07-16 084534.png",
+    imageUrl: `${basePath}/assets/Screenshot 2026-07-16 084534.png`,
   },
   {
     id: "smartexpense",
@@ -227,7 +228,7 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/Mehtab23455/smartexpense-AI-backend",
     caseStudyUrl: "#",
     featured: true,
-    imageUrl: "/assets/Screenshot 2026-07-16 084833.png",
+    imageUrl: `${basePath}/assets/Screenshot 2026-07-16 084833.png`,
   },
   {
     id: "investor-intelligence",
@@ -252,7 +253,7 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/LUNARTECH-X/Investor-Room/",
     caseStudyUrl: "#",
     featured: true,
-    imageUrl: "/assets/Screenshot 2026-07-16 084359.png",
+    imageUrl: `${basePath}/assets/Screenshot 2026-07-16 084359.png`,
   },
   {
     id: "credit-risk-modelling",
@@ -276,7 +277,7 @@ export const projects: Project[] = [
     ],
     githubUrl: "https://github.com/Mehtab23455/sql-analysis-international-debt",
     caseStudyUrl: "#",
-    imageUrl: "/assets/Screenshot 2026-09-19 170722.png",
+    imageUrl: `${basePath}/assets/Screenshot 2026-09-19 170722.png`,
   },
   {
     id: "business-performance-dashboard",
@@ -299,7 +300,7 @@ export const projects: Project[] = [
       { label: "Adoption across teams", value: "4 departments" },
     ],
     githubUrl: "https://github.com/Mehtab23455/business-performance-analysis",
-    imageUrl: "/assets/Screenshot 2026-09-14 143849.png",
+    imageUrl: `${basePath}/assets/Screenshot 2026-09-14 143849.png`,
   },
   {
     id: "matchhub",
@@ -322,7 +323,7 @@ export const projects: Project[] = [
       { label: "Profiles indexed", value: "25K+" },
     ],
     githubUrl: "https://github.com/GautamGirdhar/MatchHub-Backend",
-    imageUrl: "/assets/Screenshot 2026-09-19 170210.png",
+    imageUrl: `${basePath}/assets/Screenshot 2026-09-19 170210.png`,
   },
 ];
 
@@ -347,7 +348,7 @@ export const experience: ExperienceEntry[] = [
     role: "Data & Analytics Engineer",
     period: "June 2026 -- Present",
     location: "Texas, United States (Remote)",
-    icon: "/assets/exp/lunartech.png",
+    icon: `${basePath}/assets/exp/lunartech.png`,
     responsibilities: [
       "Prototyped and evaluated ML models for applied research projects",
       "Ran experiments and maintained reproducible evaluation pipelines",
@@ -365,7 +366,7 @@ export const experience: ExperienceEntry[] = [
     role: "Data Analytst Intern",
     period: "June 2026 -- Aug 2026",
     location: "",
-    icon: "/assets/exp/soulracle.png",
+    icon: `${basePath}/assets/exp/soulracle.png`,
     responsibilities: [
       "Built dashboards and reporting for product and marketing teams",
       "Performed exploratory analysis to inform product decisions",
@@ -383,7 +384,7 @@ export const experience: ExperienceEntry[] = [
     role: "Software & Data Engineer",
     period: "June 2025 -- Aug 2025",
     location: "Ludhiana, India",
-    icon: "/assets/exp/byteoski.png",
+    icon: `${basePath}/assets/exp/byteoski.png`,
     responsibilities: [
       "Designed and shipped ML-backed features for client-facing products",
       "Built and maintained data pipelines feeding downstream analytics",
@@ -476,7 +477,7 @@ export const certifications = [
     year: "2026", 
     url: "https://drive.google.com/file/d/1-QCSpLwdl67r5nZe34ywWzJZb9jKiIct/view?usp=sharing",
     // Extracted ID: 1-QCSpLwdl67r5nZe34ywWzJZb9jKiIct
-    imageUrl: "/assets/certifications/ba-data-science.jpg"
+    imageUrl: `${basePath}/assets/certifications/ba-data-science.jpg`
   },
   { 
     id: "ibm-data-science", 
@@ -485,7 +486,7 @@ export const certifications = [
     year: "2024", 
     url: "https://drive.google.com/file/d/1r_IbrCPL2XZhNZAOKSYV6LkKtCbicRQ9/view?usp=sharing",
     // Extracted ID: 1r_IbrCPL2XZhNZAOKSYV6LkKtCbicRQ9
-    imageUrl: "/assets/certifications/ibm-data-science.jpg"
+    imageUrl: `${basePath}/assets/certifications/ibm-data-science.jpg`
   },
   
   { 
@@ -495,7 +496,7 @@ export const certifications = [
     year: "2023", 
     url: "https://drive.google.com/file/d/1pQIIJwvGnd3kHPfavDDdbHv_pIOPW3_k/view?usp=drive_link",
     // Extracted ID: 1pQIIJwvGnd3kHPfavDDdbHv_pIOPW3_k
-    imageUrl: "/assets/certifications/ibm-big-data.jpg"
+    imageUrl: `${basePath}/assets/certifications/ibm-big-data.jpg`
   },
   { 
     id: "ibm-rapid-dev-ai", 
@@ -503,7 +504,7 @@ export const certifications = [
     issuer: "IBM", 
     year: "2025", 
     url: "https://drive.google.com/file/d/1asAKAR74O64dWKacssOBs0IZRyDwrgXO/view?usp=drive_link",
-    imageUrl: "/assets/certifications/ibm-rapid-dev-ai.jpg"
+    imageUrl: `${basePath}/assets/certifications/ibm-rapid-dev-ai.jpg`
   },
   { 
     id: "ibm-bi", 
@@ -511,7 +512,7 @@ export const certifications = [
     issuer: "IBM", 
     year: "2025", 
     url: "https://drive.google.com/file/d/12hMivQ7Z0-5jf18mhn-THVDTXOJ0AlEW/view?usp=sharing",
-    imageUrl: "/assets/certifications/ibm-bi.jpg"
+    imageUrl: `${basePath}/assets/certifications/ibm-bi.jpg`
   },
   { 
     id: "ibm-py", 
@@ -519,7 +520,7 @@ export const certifications = [
     issuer: "IBM", 
     year: "2023", 
     url: "https://drive.google.com/file/d/1hgtUe7sB9k5x6tDHvrVhkMJu7Vmvmil0/view?usp=sharing",
-    imageUrl: "/assets/certifications/ibm-py.jpg"
+    imageUrl: `${basePath}/assets/certifications/ibm-py.jpg`
   },
   { 
     id: "ibm-ml", 
@@ -527,7 +528,7 @@ export const certifications = [
     issuer: "IBM", 
     year: "2024", 
     url: "https://drive.google.com/file/d/1vnZN5HCoNTV0TxJj8B9mgbOBldcWboq6/view?usp=sharing",
-    imageUrl: "/assets/certifications/ibm-ml.jpg"
+    imageUrl: `${basePath}/assets/certifications/ibm-ml.jpg`
   },
 ];
 
