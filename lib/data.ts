@@ -394,14 +394,14 @@ export const experience: ExperienceEntry[] = [
 ];
 
 export const techStack = [
-  { category: "Programming", items: ["Python", "TypeScript", "SQL", "C++", "R"] },
+  { category: "Programming", items: ["Python", "TypeScript", "SQL"] },
   { category: "AI & Machine Learning", items: ["PyTorch", "scikit-learn", "Hugging Face", "LangChain", "XGBoost"] },
   { category: "Data Engineering", items: ["Airflow", "dbt", "Apache Spark", "Kafka"] },
   { category: "Cloud", items: ["AWS", "Google Cloud Platform", "Vercel", "Docker"] },
-  { category: "Databases", items: ["PostgreSQL", "MongoDB", "Redis", "Snowflake"] },
+  { category: "Databases", items: ["PostgreSQL", "Snowflake"] },
   { category: "Visualization", items: ["Power BI", "Tableau", "Plotly", "D3.js"] },
   { category: "Frameworks", items: ["Next.js", "React", "FastAPI", "Django"] },
-  { category: "DevOps", items: ["GitHub Actions", "Docker Compose", "Terraform"] },
+  { category: "DevOps", items: ["GitHub Actions", "Docker Compose"] },
 ];
 
 export const skills = {
